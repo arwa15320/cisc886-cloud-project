@@ -47,6 +47,8 @@ python ~/llama.cpp/convert_hf_to_gguf.py customer_support_chatbot_gguf \
   customer_support_chatbot_q4_k_m.gguf \
   Q4_K_M
 
+The Unsloth automatic GGUF export attempted to install llama.cpp and was slow in the notebook environment. To complete deployment reliably, I manually used llama.cpp from the terminal to convert the merged model to GGUF and quantize it to Q4_K_M. The final artifact, customer_support_chatbot_q4_k_m.gguf, was uploaded to EC2 and served with Ollama.
+
 ## Repository Structure
 
 ```text

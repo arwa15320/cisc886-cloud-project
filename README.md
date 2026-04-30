@@ -35,8 +35,4 @@ cisc886-cloud-project/
 ├── chatbot_fine_tuning_completed.ipynb  # Fine-tuning notebook using Unsloth + LoRA/QLoRA
 ├── api_runner.py                        # Earlier FastAPI/Unsloth testing runner
 ├── web_ui.py                            # Earlier Gradio/Unsloth testing UI
-├── web_ui_ollama.py                     # Final Gradio UI connected to Ollama CPU runner
-├── Modelfile                            # Ollama model definition for GGUF model
-├── customer-chatbot-web.service         # systemd service for auto-starting Gradio UI
-├── deployment_commands.md               # Deployment commands used on EC2
 └── README.md                            # Project replication guide

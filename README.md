@@ -20,6 +20,10 @@ The final deployed chatbot is served through Ollama on EC2 and accessed through 
 **Dataset:** Bitext Customer Support Dataset  
 **Task:** Customer support chatbot for order, shipment, account, billing, and support queries
 
+**Base model:** `Qwen2.5-3B-Instruct` fine-tuned with Unsloth LoRA/QLoRA
+
+
+
 ---
 
 ## Repository Structure
@@ -29,8 +33,8 @@ cisc886-cloud-project/
 ├── main.tf                              # Terraform infrastructure file
 ├── preprocessing_optimized.py           # PySpark preprocessing pipeline for EMR
 ├── chatbot_fine_tuning_completed.ipynb  # Fine-tuning notebook using Unsloth + LoRA/QLoRA
-├── api_runner.py                        # Earlier FastAPI/Unsloth GPU testing runner
-├── web_ui.py                            # Earlier Gradio/Unsloth GPU testing UI
+├── api_runner.py                        # Earlier FastAPI/Unsloth testing runner
+├── web_ui.py                            # Earlier Gradio/Unsloth testing UI
 ├── web_ui_ollama.py                     # Final Gradio UI connected to Ollama CPU runner
 ├── Modelfile                            # Ollama model definition for GGUF model
 ├── customer-chatbot-web.service         # systemd service for auto-starting Gradio UI

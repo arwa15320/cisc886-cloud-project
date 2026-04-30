@@ -23,6 +23,17 @@ The final deployed chatbot is served through Ollama on EC2 and accessed through 
 **Base model:** `unsloth/Qwen2.5-3B-Instruct-bnb-4bit` fine-tuned with Unsloth LoRA/QLoRA
 
 
+### GGUF Export for CPU Deployment
+
+The automatic Unsloth `save_pretrained_gguf()` export attempted to install `llama.cpp` inside the Unsloth cache directory and was taking too long. Therefore, the merged model was converted and quantized manually using `llama.cpp` from the terminal.
+
+The final deployment artifact was:
+
+`customer_support_chatbot_q4_k_m.gguf`
+
+This GGUF file was uploaded to EC2 and registered in Ollama as:
+
+`customer-support-chatbot`
 
 ---
 

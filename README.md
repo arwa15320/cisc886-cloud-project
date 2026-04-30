@@ -20,7 +20,7 @@ The final deployed chatbot is served through Ollama on EC2 and accessed through 
 **Dataset:** Bitext Customer Support Dataset  
 **Task:** Customer support chatbot for order, shipment, account, billing, and support queries
 
-**Base model:** `Qwen2.5-3B-Instruct` fine-tuned with Unsloth LoRA/QLoRA
+**Base model:** `unsloth/Qwen2.5-3B-Instruct-bnb-4bit` fine-tuned with Unsloth LoRA/QLoRA
 
 
 

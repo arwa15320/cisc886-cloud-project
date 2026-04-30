@@ -36,6 +36,16 @@ This GGUF file was uploaded to EC2 and registered in Ollama as:
 `customer-support-chatbot`
 
 ---
+cd ~/customer_support_finetune
+
+python ~/llama.cpp/convert_hf_to_gguf.py customer_support_chatbot_gguf \
+  --outfile customer_support_chatbot_f16.gguf \
+  --outtype f16
+
+~/llama.cpp/build/bin/llama-quantize \
+  customer_support_chatbot_f16.gguf \
+  customer_support_chatbot_q4_k_m.gguf \
+  Q4_K_M
 
 ## Repository Structure
 
